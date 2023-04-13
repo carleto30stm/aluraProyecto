@@ -1,4 +1,2 @@
 # aluraProyecto
-Encriptador  y desencriptador de texto para alura con algunas animaciones  y personalizaciones con javascript
-agregue algunas funcionalidades como guardar en la sesion las ultimas palabras o texto que fue encriptado al hacer click en ella se copia automaticamente
-personalemte quise serle fiel lo maximo posible a las indicaciones de alura aunque me tome el atrevimiento de colocar un footer con mi linkedin y github
+Encriptador y desencriptador de texto para Alura con algunas animaciones y personalizaciones con JavaScript. Agregué algunas funcionalidades, como guardar en la sesión las últimas palabras o texto que fue encriptado. Al hacer clic en ellas, se copia automáticamente. Personalmente, quise ser lo más fiel posible a las indicaciones de Alura, aunque me tomé el atrevimiento de colocar un footer con mi LinkedIn y GitHub.
