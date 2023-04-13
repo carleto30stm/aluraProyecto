@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Encriptador de Texto</title>
+   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="contenedor p-5 ">
+    <header id="header" >
+      <div class="animate__animated animate__backInLeft">
+        <img src="Vector.png" alt="">
+      </div>
+    </header> 
+        <section class=" section">
+          <div class="col-md-9 caja cajaInput animate__animated animate__backInDown">
+            <div class="form-group inputText p-5 "> 
+              <input type="text" id="palabra" 
+              onclick="quitarPlaceholder()" name="palabra" class="p-xl-5 py-5" placeholder="Ingrese texto aqui"></input>
+            </div>
+            <div class="btnBox mt-5">
+              <p class="parrafo"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"></path>
+              </svg>
+                Solo letras minúsculas y sin acentos </p>
+              <div>
+                <button onclick="encriptarPalabra()" class="btn btn-primary px-5 py-3 m-2 animate__animated animate__swing animate__delay-1s">Encriptar</button>
+              <button onclick="desencriptarPalabra()" class="btn btn-secondary px-5 py-3 m-2 animate__animated animate__swing animate__delay-1s">Desencriptar</button>
+              </div>
+            </div>
+          </div>
+          <aside id="resultado" class="col-md-3 caja  bg-white animate__animated animate__backInUp ">
+            <div  class="form-group ">
+                <img src="Muñeco.png" alt="Imagen de inicio" id="placeholder-image" class="img-fluid">
+                <div class="ningunTexto">
+                  <h3 class="text-center h3">Ningun texto fue encontrado</h3>
+                  <br>
+                  <h6 class="text-center h6">Ingresa el texto que deseas encriptar o desencriptar</h6>
+                </div>
+            </div>
+          </aside>
+        </section>
+        <div class="row">
+          <div class="col-md-6">         
+          </div>
+          <div class="col-md-6">
+            <ul id="wordList" class="word-list list-group"></ul>
+            <!-- Agrega el elemento de mensaje de éxito con un ícono de verificación -->
+            <div id="copySuccessMessage" class="hidden">
+              <i class="fas fa-check-circle"></i>
+              Texto copiado con éxito
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="mt-5">
+
+  <footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/carlos-alberto-campuzano-torres/" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/carleto30stm" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    <p>&copy; <span id="year"></span> Carlos Campuzano. Todos los derechos reservados.</p>
+  </div>
+  <!-- Copyright -->
+</footer>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
